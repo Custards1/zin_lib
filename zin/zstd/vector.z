@@ -1,0 +1,25 @@
+export $vector => {
+        new => (string) {
+            self._inner = "";
+            if (string != null) {
+                self._inner = self._inner + string;
+            }
+        }
+        __get => (k) {
+            ret str_at(self._inner,k);
+        }
+        __set => (k,v) {
+            if( type(v) == type(self) {
+
+             }
+            str_set(self._inner,k,v);
+        }
+        
+        len => () {
+            str_len(self._inner)
+        }
+        empty => () {
+            ret self.len()> 0;
+        }
+    }
+}
